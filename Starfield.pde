@@ -63,7 +63,7 @@ class Particle{
   void explode(){
     myX=myX+cos((float)myangle)*(float)myspeed;
     myY=myY+sin((float)myangle)*(float)myspeed;
-    if (myY>800||myY<0){
+    if (myY>800||myY<0||myX>800||myX<0){
     myX=400;
     myY=400;
     myangle=Math.random()*2*Math.PI;
