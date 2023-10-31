@@ -66,6 +66,7 @@ class Particle{
     if (myY>800||myY<0){
     myX=400;
     myY=400;
+    myangle=Math.random()*2*Math.PI;
     }
   }
 }
